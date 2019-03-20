@@ -37,7 +37,18 @@
                     </a>
                 </div>
                 <div class="login-form">
-                    <form method="POST" action="">
+                    <p class="alert-danger">
+                    <?php
+                    $message=Session::get('message');
+                        if($message){
+                            echo $message;
+                            Session::put('message',null);
+                        }
+                        
+                        ?>
+                        </p>
+                <form method="POST" action="{{url('/admin-dashboard')}}">
+                        {{ csrf_field()}}
                         <div class="form-group">
                             <label>Email</label>
                             <input type="text" class="form-control" name="admin_email" placeholder="Email Address">
