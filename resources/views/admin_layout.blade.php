@@ -2,7 +2,10 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +20,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
     <link rel="stylesheet" href="{{asset('backend/css/cs-skin-elastic.css')}}">
     <link rel="stylesheet" href="{{asset('backend/css/style.css')}}">
@@ -28,38 +32,45 @@
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
 
-   <style>
-    #weatherWidget .currentDesc {
-        color: #ffffff!important;
-    }
+    <style>
+        #weatherWidget .currentDesc {
+            color: #ffffff !important;
+        }
+
         .traffic-chart {
             min-height: 335px;
         }
-        #flotPie1  {
+
+        #flotPie1 {
             height: 150px;
         }
+
         #flotPie1 td {
-            padding:3px;
+            padding: 3px;
         }
+
         #flotPie1 table {
-            top: 20px!important;
-            right: -10px!important;
+            top: 20px !important;
+            right: -10px !important;
         }
+
         .chart-container {
             display: table;
-            min-width: 270px ;
+            min-width: 270px;
             text-align: left;
             padding-top: 10px;
             padding-bottom: 10px;
         }
-        #flotLine5  {
-             height: 105px;
+
+        #flotLine5 {
+            height: 105px;
         }
 
         #flotBarChart {
             height: 150px;
         }
-        #cellPaiChart{
+
+        #cellPaiChart {
             height: 160px;
         }
 
@@ -73,12 +84,13 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                    <a href="{{URL::to('/dashboard')}}"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
+                        <a href="{{URL::to('/dashboard')}}"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                     </li>
-                    <li class="menu-title">UI elements</li><!-- /.menu-title -->
+                    <li class="menu-title">Data</li><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Components</a>
-                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Buttons</a></li>
+                        <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i
+                                class="menu-icon fa fa-cogs"></i>All Category</a>
+                        {{-- <ul class="sub-menu children dropdown-menu">                            
                             <li><i class="fa fa-id-badge"></i><a href="ui-badges.html">Badges</a></li>
                             <li><i class="fa fa-bars"></i><a href="ui-tabs.html">Tabs</a></li>
 
@@ -89,60 +101,94 @@
                             <li><i class="fa fa-book"></i><a href="ui-switches.html">Switches</a></li>
                             <li><i class="fa fa-th"></i><a href="ui-grids.html">Grids</a></li>
                             <li><i class="fa fa-file-word-o"></i><a href="ui-typgraphy.html">Typography</a></li>
-                        </ul>
+                        </ul> --}}
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Tables</a>
-                        <ul class="sub-menu children dropdown-menu">
+                        <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i
+                                class="menu-icon fa fa-table"></i>Add Catego</a>
+                        {{-- <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-table"></i><a href="tables-basic.html">Basic Table</a></li>
                             <li><i class="fa fa-table"></i><a href="tables-data.html">Data Table</a></li>
-                        </ul>
+                        </ul> --}}
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Forms</a>
-                        <ul class="sub-menu children dropdown-menu">
+                        <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i
+                                class="menu-icon fa fa-th"></i>All Brands</a>
+                        {{-- <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.html">Basic Form</a></li>
                             <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Advanced Form</a></li>
-                        </ul>
+                        </ul> --}}
                     </li>
 
-                    <li class="menu-title">Icons</li><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i
+                                class="menu-icon fa fa-th"></i>Add Brands</a>
+                        {{-- <ul class="sub-menu children dropdown-menu">
+                                <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.html">Basic Form</a></li>
+                                <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Advanced Form</a></li>
+                            </ul> --}}
+                    </li>
+
+                    <li class="menu-title">Product</li><!-- /.menu-title -->
 
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Icons</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Product</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Font Awesome</a></li>
-                            <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Themefy Icons</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Add
+                                    Product</a></li>
+                            <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">All Product</a>
+                            </li>
                         </ul>
                     </li>
+
+
                     <li>
-                        <a href="widgets.html"> <i class="menu-icon ti-email"></i>Widgets </a>
+                        <a href="widgets.html"> <i class="menu-icon ti-email"></i>Slider </a>
                     </li>
-                    <li class="menu-item-has-children dropdown">
+
+                    <li>
+                        <a href="widgets.html"> <i class="menu-icon ti-email"></i>Social Link </a>
+                    </li>
+
+                    <li>
+                        <a href="widgets.html"> <i class="menu-icon ti-email"></i>Shop Name </a>
+                    </li>
+                    {{-- <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart"></i>Charts</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-line-chart"></i><a href="charts-chartjs.html">Chart JS</a></li>
                             <li><i class="menu-icon fa fa-area-chart"></i><a href="charts-flot.html">Flot Chart</a></li>
                             <li><i class="menu-icon fa fa-pie-chart"></i><a href="charts-peity.html">Peity Chart</a></li>
                         </ul>
-                    </li>
+                    </li> --}}
 
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-area-chart"></i>Maps</a>
+                    {{-- <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"> <i class="menu-icon fa fa-area-chart"></i>Maps</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-map-o"></i><a href="maps-gmap.html">Google Maps</a></li>
-                            <li><i class="menu-icon fa fa-street-view"></i><a href="maps-vector.html">Vector Maps</a></li>
+                            <li><i class="menu-icon fa fa-street-view"></i><a href="maps-vector.html">Vector Maps</a>
+                            </li>
                         </ul>
+                    </li> --}}
+                    <li class="menu-title">Delivery</li><!-- /.menu-title -->
+                    <li>
+                        <a href="widgets.html"> <i class="menu-icon ti-email"></i>Delivery Man </a>
                     </li>
-                    <li class="menu-title">Extras</li><!-- /.menu-title -->
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Pages</a>
+                    <li>
+                        <a href="widgets.html"> <i class="menu-icon ti-email"></i>Delivery Girl </a>
+                    </li>
+                    {{-- <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Pages</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-sign-in"></i><a href="page-login.html">Login</a></li>
                             <li><i class="menu-icon fa fa-sign-in"></i><a href="page-register.html">Register</a></li>
-                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Forget Pass</a></li>
+                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Forget Pass</a>
+                            </li>
                         </ul>
-                    </li>
+                    </li> --}}
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
@@ -165,13 +211,15 @@
                         <button class="search-trigger"><i class="fa fa-search"></i></button>
                         <div class="form-inline">
                             <form class="search-form">
-                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..."
+                                    aria-label="Search">
                                 <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
                             </form>
                         </div>
 
                         <div class="dropdown for-notification">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-bell"></i>
                                 <span class="count bg-danger">3</span>
                             </button>
@@ -193,7 +241,8 @@
                         </div>
 
                         <div class="dropdown for-message">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="message" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="message"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-envelope"></i>
                                 <span class="count bg-primary">4</span>
                             </button>
@@ -237,19 +286,20 @@
 
                     <div class="user-area dropdown float-right">
                         <a href="#" class="btn dropdown-toggle active" data-toggle="dropdown">
-                        
-                        Halo, {{Session::get('admin_name')}}
-                        
+
+                            Halo, {{Session::get('admin_name')}}
+
                         </a>
 
                         <div class="user-menu dropdown-menu">
                             <a class="nav-link" href="#"><i class="fa fa- user"></i>My Profile</a>
 
-                            <a class="nav-link" href="#"><i class="fa fa- user"></i>Notifications <span class="count">13</span></a>
+                            <a class="nav-link" href="#"><i class="fa fa- user"></i>Notifications <span
+                                    class="count">13</span></a>
 
                             <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a>
 
-                        <a class="nav-link" href="{{URL::to('/logout')}}"><i class="fa fa-power -off"></i>Logout</a>
+                            <a class="nav-link" href="{{URL::to('/logout')}}"><i class="fa fa-power -off"></i>Logout</a>
                         </div>
                     </div>
 
@@ -259,7 +309,7 @@
         <!-- /#header -->
         <!-- Content -->
         <div class="content">
-           @yield('admin_content')
+            @yield('admin_content')
         </div>
         <!-- /.content -->
         <div class="clearfix"></div>
@@ -307,14 +357,31 @@
 
     <!--Local Stuff-->
     <script>
-        jQuery(document).ready(function($) {
+        jQuery(document).ready(function ($) {
             "use strict";
 
             // Pie chart flotPie1
-            var piedata = [
-                { label: "Desktop visits", data: [[1,32]], color: '#5c6bc0'},
-                { label: "Tab visits", data: [[1,33]], color: '#ef5350'},
-                { label: "Mobile visits", data: [[1,35]], color: '#66bb6a'}
+            var piedata = [{
+                    label: "Desktop visits",
+                    data: [
+                        [1, 32]
+                    ],
+                    color: '#5c6bc0'
+                },
+                {
+                    label: "Tab visits",
+                    data: [
+                        [1, 33]
+                    ],
+                    color: '#ef5350'
+                },
+                {
+                    label: "Mobile visits",
+                    data: [
+                        [1, 35]
+                    ],
+                    color: '#66bb6a'
+                }
             ];
 
             $.plot('#flotPie1', piedata, {
@@ -325,7 +392,7 @@
                         innerRadius: 0.65,
                         label: {
                             show: true,
-                            radius: 2/3,
+                            radius: 2 / 3,
                             threshold: 1
                         },
                         stroke: {
@@ -340,9 +407,20 @@
             });
             // Pie chart flotPie1  End
             // cellPaiChart
-            var cellPaiChart = [
-                { label: "Direct Sell", data: [[1,65]], color: '#5b83de'},
-                { label: "Channel Sell", data: [[1,35]], color: '#00bfa5'}
+            var cellPaiChart = [{
+                    label: "Direct Sell",
+                    data: [
+                        [1, 65]
+                    ],
+                    color: '#5b83de'
+                },
+                {
+                    label: "Channel Sell",
+                    data: [
+                        [1, 35]
+                    ],
+                    color: '#00bfa5'
+                }
             ];
             $.plot('#cellPaiChart', cellPaiChart, {
                 series: {
@@ -355,7 +433,8 @@
                 },
                 legend: {
                     show: false
-                },grid: {
+                },
+                grid: {
                     hoverable: true,
                     clickable: true
                 }
@@ -363,14 +442,23 @@
             });
             // cellPaiChart End
             // Line Chart  #flotLine5
-            var newCust = [[0, 3], [1, 5], [2,4], [3, 7], [4, 9], [5, 3], [6, 6], [7, 4], [8, 10]];
+            var newCust = [
+                [0, 3],
+                [1, 5],
+                [2, 4],
+                [3, 7],
+                [4, 9],
+                [5, 3],
+                [6, 6],
+                [7, 4],
+                [8, 10]
+            ];
 
-            var plot = $.plot($('#flotLine5'),[{
+            var plot = $.plot($('#flotLine5'), [{
                 data: newCust,
                 label: 'New Data Flow',
                 color: '#fff'
-            }],
-            {
+            }], {
                 series: {
                     lines: {
                         show: true,
@@ -400,30 +488,31 @@
             // Traffic Chart using chartist
             if ($('#traffic-chart').length) {
                 var chart = new Chartist.Line('#traffic-chart', {
-                  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-                  series: [
-                  [0, 18000, 35000,  25000,  22000,  0],
-                  [0, 33000, 15000,  20000,  15000,  300],
-                  [0, 15000, 28000,  15000,  30000,  5000]
-                  ]
-              }, {
-                  low: 0,
-                  showArea: true,
-                  showLine: false,
-                  showPoint: false,
-                  fullWidth: true,
-                  axisX: {
-                    showGrid: true
-                }
-            });
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    series: [
+                        [0, 18000, 35000, 25000, 22000, 0],
+                        [0, 33000, 15000, 20000, 15000, 300],
+                        [0, 15000, 28000, 15000, 30000, 5000]
+                    ]
+                }, {
+                    low: 0,
+                    showArea: true,
+                    showLine: false,
+                    showPoint: false,
+                    fullWidth: true,
+                    axisX: {
+                        showGrid: true
+                    }
+                });
 
-                chart.on('draw', function(data) {
-                    if(data.type === 'line' || data.type === 'area') {
+                chart.on('draw', function (data) {
+                    if (data.type === 'line' || data.type === 'area') {
                         data.element.animate({
                             d: {
                                 begin: 2000 * data.index,
                                 dur: 2000,
-                                from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
+                                from: data.path.clone().scale(1, 0).translate(0, data.chartRect
+                                    .height()).stringify(),
                                 to: data.path.clone().stringify(),
                                 easing: Chartist.Svg.Easing.easeOutQuint
                             }
@@ -434,36 +523,35 @@
             // Traffic Chart using chartist End
             //Traffic chart chart-js
             if ($('#TrafficChart').length) {
-                var ctx = document.getElementById( "TrafficChart" );
+                var ctx = document.getElementById("TrafficChart");
                 ctx.height = 150;
-                var myChart = new Chart( ctx, {
+                var myChart = new Chart(ctx, {
                     type: 'line',
                     data: {
-                        labels: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul" ],
-                        datasets: [
-                        {
-                            label: "Visit",
-                            borderColor: "rgba(4, 73, 203,.09)",
-                            borderWidth: "1",
-                            backgroundColor: "rgba(4, 73, 203,.5)",
-                            data: [ 0, 2900, 5000, 3300, 6000, 3250, 0 ]
-                        },
-                        {
-                            label: "Bounce",
-                            borderColor: "rgba(245, 23, 66, 0.9)",
-                            borderWidth: "1",
-                            backgroundColor: "rgba(245, 23, 66,.5)",
-                            pointHighlightStroke: "rgba(245, 23, 66,.5)",
-                            data: [ 0, 4200, 4500, 1600, 4200, 1500, 4000 ]
-                        },
-                        {
-                            label: "Targeted",
-                            borderColor: "rgba(40, 169, 46, 0.9)",
-                            borderWidth: "1",
-                            backgroundColor: "rgba(40, 169, 46, .5)",
-                            pointHighlightStroke: "rgba(40, 169, 46,.5)",
-                            data: [1000, 5200, 3600, 2600, 4200, 5300, 0 ]
-                        }
+                        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+                        datasets: [{
+                                label: "Visit",
+                                borderColor: "rgba(4, 73, 203,.09)",
+                                borderWidth: "1",
+                                backgroundColor: "rgba(4, 73, 203,.5)",
+                                data: [0, 2900, 5000, 3300, 6000, 3250, 0]
+                            },
+                            {
+                                label: "Bounce",
+                                borderColor: "rgba(245, 23, 66, 0.9)",
+                                borderWidth: "1",
+                                backgroundColor: "rgba(245, 23, 66,.5)",
+                                pointHighlightStroke: "rgba(245, 23, 66,.5)",
+                                data: [0, 4200, 4500, 1600, 4200, 1500, 4000]
+                            },
+                            {
+                                label: "Targeted",
+                                borderColor: "rgba(40, 169, 46, 0.9)",
+                                borderWidth: "1",
+                                backgroundColor: "rgba(40, 169, 46, .5)",
+                                pointHighlightStroke: "rgba(40, 169, 46,.5)",
+                                data: [1000, 5200, 3600, 2600, 4200, 5300, 0]
+                            }
                         ]
                     },
                     options: {
@@ -478,12 +566,28 @@
                         }
 
                     }
-                } );
+                });
             }
             //Traffic chart chart-js  End
             // Bar Chart #flotBarChart
             $.plot("#flotBarChart", [{
-                data: [[0, 18], [2, 8], [4, 5], [6, 13],[8,5], [10,7],[12,4], [14,6],[16,15], [18, 9],[20,17], [22,7],[24,4], [26,9],[28,11]],
+                data: [
+                    [0, 18],
+                    [2, 8],
+                    [4, 5],
+                    [6, 13],
+                    [8, 5],
+                    [10, 7],
+                    [12, 4],
+                    [14, 6],
+                    [16, 15],
+                    [18, 9],
+                    [20, 17],
+                    [22, 7],
+                    [24, 4],
+                    [26, 9],
+                    [28, 11]
+                ],
                 bars: {
                     show: true,
                     lineWidth: 0,
@@ -496,6 +600,8 @@
             });
             // Bar Chart #flotBarChart End
         });
+
     </script>
 </body>
+
 </html>
