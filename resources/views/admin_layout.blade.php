@@ -236,8 +236,10 @@
                     </div>
 
                     <div class="user-area dropdown float-right">
-                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
+                        <a href="#" class="btn dropdown-toggle active" data-toggle="dropdown">
+                        
+                        Halo, {{Session::get('admin_name')}}
+                        
                         </a>
 
                         <div class="user-menu dropdown-menu">
