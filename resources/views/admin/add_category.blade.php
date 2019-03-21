@@ -3,7 +3,10 @@
 <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
-<link href="">
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" media="screen"
+     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
 <!-- include summernote css/js -->
 <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
 <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
@@ -24,7 +27,7 @@
 <div class="row-fluid sortable">
     <div class="box span12">
         <div class="box-header" data-original-title>
-            <h2><i class="halflings-icon edit"></i><span class="break"></span>Form Elements</h2>
+            <h2><i class="halflings-icon edit"></i><span class="break"></span>Add Category</h2>
             <div class="box-icon">
                 <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
                 <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
@@ -44,11 +47,15 @@
                             <p class="help-block">Start typing to activate auto complete!</p>
                         </div>
                     </div>
-                    <div class="control-group">
+                    <div class="control-group" >
                         <label class="control-label" for="date01">Date input</label>
-                        <div class="controls">
-                            <input type="text" class="input-xlarge datepicker" id="date01" value="02/16/12">
+                        <div class="controls"  id="datetimepicker">
+                                <input type="text" class="typedate"/>
+                                <span class="add-on">
+                                        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+                                      </span>
                         </div>
+                      
                     </div>
 
                     <div class="control-group">
@@ -60,9 +67,13 @@
 
                     <textarea id="summernote" name="editordata"></textarea>
 
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">Save changes</button>
-                        <button type="reset" class="btn">Cancel</button>
+                    <div class="">
+                       
+                            <button type="submit" class="btn btn-success">Save</button>
+                            &nbsp;
+                            <button type="reset" class="btn btn-cancel">Cancel</button>
+
+                        
                     </div>
                 </fieldset>
             </form>
@@ -73,10 +84,23 @@
 
 </div>
 <!--/row-->
+
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+    </script>
 <script>
     $(document).ready(function () {
         $('#summernote').summernote();
     });
-
+   
 </script>
+  <script type="text/javascript">
+    $('#datetimepicker').datetimepicker({
+      format: 'dd/MM/yyyy hh:mm:ss',
+      language: 'us'
+    });
+  </script>
 @endsection

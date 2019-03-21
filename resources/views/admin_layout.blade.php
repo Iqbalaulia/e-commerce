@@ -285,7 +285,7 @@
                     </div>
 
                     <div class="user-area dropdown float-right">
-                        <a href="#" class="btn dropdown-toggle active" data-toggle="dropdown">
+                        <a href="#" class="btn btn-primary active" data-toggle="dropdown">
 
                             Halo, {{Session::get('admin_name')}}
 
