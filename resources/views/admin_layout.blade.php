@@ -104,8 +104,8 @@
                         </ul> --}}
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i
-                                class="menu-icon fa fa-table"></i>Add Catego</a>
+                    <a href="{{URL::to('/add-category')}}" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i
+                                class="menu-icon fa fa-table"></i>Add Category</a>
                         {{-- <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-table"></i><a href="tables-basic.html">Basic Table</a></li>
                             <li><i class="fa fa-table"></i><a href="tables-data.html">Data Table</a></li>
