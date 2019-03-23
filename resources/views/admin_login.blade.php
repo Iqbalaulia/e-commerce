@@ -56,18 +56,17 @@
                         <a href="#"><i class="halflings-icon cog"></i></a>
                     </div>
                     <h1>Login to your account</h1>
-                    <form class="form-horizontal" action="index.html" method="post">
+                    <form class="form-horizontal" action="" method="post">
                         <fieldset>
 
-                            <div class="input-prepend" title="Username">
-                                <input class="input-large span10" name="username" id="username" type="text"
-                                    placeholder="type username" />
+                            <div class="input-prepend" title="Email">
+                                <input class="input-large span10" name="admin_email"type="text"
+                                    placeholder="type your email" />
                             </div>
-                            <div class="clearfix"></div>
-
+                        
                             <div class="input-prepend" title="Password">
 
-                                <input class="input-large span10" name="password" id="password" type="password"
+                                <input class="input-large span10" name="admin_password" id="password" type="password"
                                     placeholder="type password" />
                             </div>
                             <div class="clearfix"></div>
