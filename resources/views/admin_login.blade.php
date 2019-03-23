@@ -99,15 +99,15 @@
 
     <!-- start: JavaScript-->
 
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script src="js/jquery-migrate-1.0.0.min.js"></script>
-    <script src="js/jquery-ui-1.10.0.custom.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.cookie.js"></script>
-    <script src="js/excanvas.js"></script>
-    <script src="js/jquery.uniform.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="{{asset('backend/js/jquery-1.9.1.min.js')}}"></script>
+    <script src="{{asset('backend/js/jquery-migrate-1.0.0.min.js')}}"></script>
+    <script src="{{asset('backend/js/jquery-ui-1.10.0.custom.min.js')}}"></script>
+    <script src="{{asset('backend/js/modernizr.js')}}"></script>
+    <script src="{{asset('backend/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('backend/js/jquery.cookie.js')}}"></script>
+    <script src="{{asset('backend/js/excanvas.js')}}"></script>
+    <script src="{{asset('backend/js/jquery.uniform.min.js')}}"></script>
+    <script src="{{asset('backend/js/custom.js')}}"></script>
     <!-- end: JavaScript-->
 
 </body>
